@@ -3,9 +3,9 @@ import numpy as np
 from PIL import Image, ImageEnhance, ImageOps
 
 # App title
-logo_url = "https://raw.githubusercontent.com/your-username/your-repo/main/path-to-your-image/logo.jpg"
-st.image(logo_url, caption="President University", width=200)
+st.image("PRESU LOGO.jpg")
 st.title("Linear Algebra Group 6")
+
 
 # Navigation section
 st.sidebar.title("Navigation")
@@ -22,10 +22,18 @@ if menu == "Home":
 # Group Members page
 elif menu == "Group Members":
     st.write("Here are the members of our group:")
-    st.write("1. Ivana SintaUli Manurung(004202300079)")
-    st.write("2. Lilia Prita Irawati(004202300020)")
-    st.write("3. Talitha Elga Kurniawan(004202300034)")
-    st.write("4. Yohana Nadia Gabriella S.(004202300033)")
+    #Group member 1:
+    if st.button("1. Ivana SintaUli Manurung(004202300079)"):
+        st.image("Ivana.jpg", width=450) 
+    #Group member 2:
+    if st.button("2. Lilia Prita Irawati(004202300020)"):
+        st.image("Lilia.jpg", width=450)
+    #Group member 3:
+    if st.button("3. Talitha Elga Kurniawan(004202300034)"):
+        st.image("Talitha.jpg", width=450)
+    #Group member 4:
+    if st.button("4. Yohana Nadia Gabriella S.(004202300033)"):
+        st.image("Yohana.jpg", width=450)
 
 # Image Transformations page
 elif menu == "Image Transformations":
